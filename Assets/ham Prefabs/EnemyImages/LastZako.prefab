@@ -1,0 +1,319 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3224751587353295310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3579417709556778228}
+  - component: {fileID: 1208291613808386701}
+  - component: {fileID: 9111430299413958347}
+  - component: {fileID: 940017803163542416}
+  - component: {fileID: 4929715234598123827}
+  - component: {fileID: 569222450480282504}
+  - component: {fileID: -6488921313980737930}
+  - component: {fileID: 4978688901604657734}
+  - component: {fileID: 7917235900517115817}
+  - component: {fileID: 8510732938239034082}
+  - component: {fileID: 8795499894873840752}
+  - component: {fileID: 4389595595611381867}
+  m_Layer: 3
+  m_Name: LastZako
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3579417709556778228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1208291613808386701
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -1
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 5095687317113018475, guid: 9a23a3534407f1049ae2fc7cd7c6db4d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.2666667, y: 2.3466666}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!50 &9111430299413958347
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &940017803163542416
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!114 &4929715234598123827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084446ba8ea97814f88d4859dc948d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  maxHP: 1000000
+  currentHP: 0
+  moveSpeed: 1
+  touchDamage: 100
+  attackRadius: 1
+  hpGrowthPerWave: 0.1
+  damageGrowthPerWave: 0.05
+  isBoss: 1
+  isRangedBoss: 0
+  hasBarrier: 0
+  keepDistance: 6
+  enableBounce: 0
+  enableWalkSway: 0
+  swayAngle: 6
+  swaySpeed: 12
+  damageTextPrefab: {fileID: 5178194321891192060, guid: 84e7e7acd8604ac42ab62616db08da79, type: 3}
+  stopDistance: 0.8
+--- !u!114 &569222450480282504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad44c69fa04e6d4381d5ec6b87cd585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoShadow
+  shadowOffset: -1.2
+  shadowScaleX: 1.2
+  shadowScaleY: 0.3
+  shadowAlpha: 0.8
+  shadowSortingOrder: -20
+  isEnemyShadow: 1
+--- !u!114 &-6488921313980737930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b971b070b54a744b0737b3f9f84a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossTurretSkill
+  turretPrefab: {fileID: 3882427926966088390, guid: ff483c58cbebbf44584eda7e8332d47a, type: 3}
+  skillCooldown: 6
+  marginX: 0.4
+  marginY: 0.5
+--- !u!114 &4978688901604657734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74dc390828f61c945a2574f8c6f54de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossRainSkill
+  isOneTimeHpTrigger: 0
+  rainEffectPrefab: {fileID: 6077168872989578693, guid: f514474ff8e94554d8477de1f2f601b0, type: 3}
+  skillCooldown: 50
+  rainDuration: 10
+  damagePercentPerTick: 0.005
+  tickInterval: 1
+  triggerHpPercent: 0.5
+--- !u!114 &7917235900517115817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a2dc6d59529c504cbdb925609b31817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZakoBossSpawner
+  zakoBossPrefabs:
+  - {fileID: 3514017458852822920, guid: 453063813cb308e4e92fa9b5f050eef3, type: 3}
+  - {fileID: 3514017458852822920, guid: 40b127c30a4200d41afaa579e5ef93b7, type: 3}
+  - {fileID: 3514017458852822920, guid: 78f8df2ea8ff64847913fb21bfa71d60, type: 3}
+  - {fileID: 3514017458852822920, guid: 998d6e04034bfb94b96de7a25fb9f8b9, type: 3}
+  - {fileID: 3514017458852822920, guid: dfd15b1d911871b4699a5e3e11d035ee, type: 3}
+  - {fileID: 3514017458852822920, guid: 5b86bcf88f8102c48a445d4413ce32b2, type: 3}
+  rushInterval: 45
+  spawnCount: 20
+  spawnDelay: 0.1
+--- !u!114 &8510732938239034082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9454a9da59b260342a040a43b9677799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossBarrier
+  barrierRadius: 2
+  pushForce: 5
+--- !u!114 &8795499894873840752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d373a70d3d83a44daa74b24297ee1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossJumpSkill
+  skillCooldown: 15
+  jumpHeight: 20
+  jumpUpSpeed: 15
+  slamDownSpeed: 40
+  hangTime: 0.8
+  shockwaveDamage: 80
+  pushbackTime: 0.2
+  shockwaveEffectPrefab: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  effectScale: 2
+--- !u!114 &4389595595611381867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a9630f85b92e4c963e515a1974c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossDescending
+  targetPosition: {x: 0, y: 2.5}
+  gravity: 25

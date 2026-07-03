@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6681695461286734605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6834185069857031647}
+  - component: {fileID: 2853040074789589673}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6834185069857031647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681695461286734605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.24207, y: -0.09423, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2853040074789589673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6681695461286734605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd16a8154c71604f8bdf4a2763de139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  levelText: {fileID: 0}
+  hpBar: {fileID: 0}
+  expBar: {fileID: 0}
+  hpText: {fileID: 0}
+  expText: {fileID: 0}
+  dungeonHpText: {fileID: 0}
+  pauseMenuPanel: {fileID: 0}
+  currentLevel: 1
+  totalFoodEaten: 0
+  currentExp: 0
+  currentMaxExp: 30
+  expPerFood: 30
+  maxHP: 10
+  currentHP: 10
+  attackPower: 10
+  intelligence: 10
+  seedCount: 0
+  vegetableCount: 0
+  meatCount: 0
+  normalSprite: {fileID: 8677885103984585734, guid: 02639732a94a09a4fa64ce8c543f857e, type: 3}
+  smartSprite: {fileID: -209864044313043287, guid: eda677590d0f21d45975c3d196b1bba2, type: 3}
+  toughSprite: {fileID: -993045629546992462, guid: c5f2f82f80c2cb446906c61401be65f9, type: 3}
+  fighterSprite: {fileID: 3341705797597308849, guid: 3d398d070667c7742971b508fa931d07, type: 3}
+  normalScale: {x: 0.3, y: 0.3, z: 1}
+  smartScale: {x: 0.3, y: 0.3, z: 1}
+  toughScale: {x: 0.3, y: 0.3, z: 1}
+  fighterScale: {x: 0.3, y: 0.3, z: 1}
+  savedHamsterSprite: {fileID: 0}
+  savedHamsterScale: {x: 1, y: 1, z: 1}
+  hamsterLevelUpEffectPrefab: {fileID: 0}
+  uiLevelUpEffect: {fileID: 3718779733423271928, guid: 5f57624a1b6c05a459551767ceba116e, type: 3}
+  statusPanel: {fileID: 0}
+  statsText: {fileID: 0}
+  hamsterImageUI: {fileID: 0}
+  descriptionText: {fileID: 0}
+  statusAnimator: {fileID: 0}
+  menuPanel: {fileID: 0}
+  menuAnimator: {fileID: 0}
