@@ -9913,6 +9913,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7770337310441391829}
+    - targetCorrespondingSourceObject: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3585870380694070255}
   m_SourcePrefab: {fileID: 100100000, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
 --- !u!1 &2360655870356088562 stripped
 GameObject:
@@ -10064,6 +10067,19 @@ MonoBehaviour:
     perlinColor: 0
     perlinColorSpeed: 0
   fadeOutReference: {fileID: 0}
+--- !u!210 &-3585870380694070255
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360655870356088562}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!4 &2360655870356088567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6710139492206580329, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}

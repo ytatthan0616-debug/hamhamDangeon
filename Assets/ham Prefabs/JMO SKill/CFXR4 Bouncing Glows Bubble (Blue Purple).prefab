@@ -4921,6 +4921,7 @@ GameObject:
   - component: {fileID: 7648648339908012776}
   - component: {fileID: 2655182074034986952}
   - component: {fileID: -8623317331828581128}
+  - component: {fileID: 7884719157584171062}
   m_Layer: 0
   m_Name: CFXR4 Bouncing Glows Bubble (Blue Purple)
   m_TagString: Untagged
@@ -9892,6 +9893,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!210 &7884719157584171062
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824670795371433373}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &7708729512989566163
 GameObject:
   m_ObjectHideFlags: 0

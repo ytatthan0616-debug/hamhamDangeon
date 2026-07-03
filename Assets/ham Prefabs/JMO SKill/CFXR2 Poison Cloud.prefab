@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4425129568604026700}
   - component: {fileID: 9049779857616056944}
   - component: {fileID: 1448614049554075112}
+  - component: {fileID: 4463827305616875719}
   m_Layer: 0
   m_Name: CFXR2 Poison Cloud
   m_TagString: Untagged
@@ -4731,6 +4732,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1e71800f067744cbd27f8d13656374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PoisonEffect
+--- !u!210 &4463827305616875719
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425129568585013132}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &5993517221923844901
 GameObject:
   m_ObjectHideFlags: 0

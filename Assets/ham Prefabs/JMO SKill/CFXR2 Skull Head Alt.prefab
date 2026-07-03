@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5985634496115995771}
   - component: {fileID: 114594520628833592}
   - component: {fileID: 4375909422467429802}
+  - component: {fileID: 1694693301461240266}
   m_Layer: 0
   m_Name: CFXR2 Skull Head Alt
   m_TagString: Untagged
@@ -4828,3 +4829,16 @@ MonoBehaviour:
   frequency: 8
   amplitude: 1.5
   lifeTime: 3
+--- !u!210 &1694693301461240266
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985634496115995773}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0

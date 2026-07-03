@@ -19118,6 +19118,7 @@ GameObject:
   - component: {fileID: 6855314210357232285}
   - component: {fileID: 114566830303460284}
   - component: {fileID: 6056685126196969831}
+  - component: {fileID: 6739206590589962856}
   m_Layer: 0
   m_Name: CFXR2 Broken Heart
   m_TagString: Untagged
@@ -23896,6 +23897,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a817cf5900d1d5346802bb6090814f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeartBreakEffect
+--- !u!210 &6739206590589962856
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6855314210357232287}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &7833047882468302001
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9049779857616056944}
   - component: {fileID: 1448614049554075112}
   - component: {fileID: -5643901771556148560}
+  - component: {fileID: -3378202698770392253}
   m_Layer: 0
   m_Name: CFXR2 Poison Cloud 1
   m_TagString: Untagged
@@ -4746,6 +4747,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAreaAttack
   damage: 10
   lifeTime: 4
+--- !u!210 &-3378202698770392253
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425129568585013132}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &5993517221923844901
 GameObject:
   m_ObjectHideFlags: 0

@@ -4928,6 +4928,7 @@ GameObject:
   - component: {fileID: 4941468510946354384}
   - component: {fileID: 114873338690784808}
   - component: {fileID: 5615622733935478309}
+  - component: {fileID: 1631948232006410938}
   m_Layer: 0
   m_Name: CFXR2 Ground Hit
   m_TagString: Untagged
@@ -9745,3 +9746,16 @@ MonoBehaviour:
     targetCount: 1
     effectScale: 1
   tackleEffectPrefab: {fileID: 0}
+--- !u!210 &1631948232006410938
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432958286849152088}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0

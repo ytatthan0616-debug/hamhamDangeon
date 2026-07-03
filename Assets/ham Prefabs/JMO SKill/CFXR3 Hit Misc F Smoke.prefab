@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 141433446842962268}
   - component: {fileID: 141433446842962273}
   - component: {fileID: 4962167596169439170}
+  - component: {fileID: -4887466377272972313}
   m_Layer: 0
   m_Name: CFXR3 Hit Misc F Smoke
   m_TagString: Untagged
@@ -4952,6 +4953,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc95d6b07982c734998ac8c82092beaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CrashEffect
+--- !u!210 &-4887466377272972313
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141433446842962269}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &8122789944495389005
 GameObject:
   m_ObjectHideFlags: 0

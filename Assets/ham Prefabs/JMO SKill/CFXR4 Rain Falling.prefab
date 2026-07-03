@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6077168872989578747}
   - component: {fileID: 2461203982218664524}
   - component: {fileID: 6077168872989578695}
+  - component: {fileID: -4830204313485687950}
   m_Layer: 0
   m_Name: CFXR4 Rain Falling
   m_TagString: Untagged
@@ -4909,3 +4910,16 @@ MonoBehaviour:
   particlesPerUnit: 5
   maxEmissionRate: 1000
   density: 999.9999
+--- !u!210 &-4830204313485687950
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6077168872989578693}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 100
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
