@@ -64,7 +64,7 @@ public class BossRainSkill : MonoBehaviour
             if (!hasTriggered && enemyScript != null && enemyScript.currentHP <= enemyScript.maxHP * triggerHpPercent)
             {
                 hasTriggered = true;
-                if (TickerMessageUI.instance != null) TickerMessageUI.instance.ShowMessage("<color=#ff0000>The boss goes into a rage! A deadly rain begins to fall!!</color>");
+                if (TickerMessageUI.instance != null) TickerMessageUI.instance.ShowBossSkillMessage();
                 StartCoroutine(RainRoutine());
             }
         }

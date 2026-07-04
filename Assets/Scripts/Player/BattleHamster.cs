@@ -365,7 +365,45 @@ public class BattleHamster : MonoBehaviour
     {
         clickedTarget = target;
         if (currentMarker != null) Destroy(currentMarker);
-        if (targetMarkerPrefab != null) currentMarker = Instantiate(targetMarkerPrefab, target.position, Quaternion.identity, target);
+        if (targetMarkerPrefab != null)
+        {
+            currentMarker = Instantiate(targetMarkerPrefab, target.position, Quaternion.identity, target);
+            // ★追加：生成したマーカーにカッコいい演出をつける
+            StartCoroutine(MarkerCoolEffect(currentMarker.transform));
+        }
+    }
+
+    // ★追加：マーカー出現時のアニメーション演出
+    IEnumerator MarkerCoolEffect(Transform markerObj)
+    {
+        float duration = 0.3f; // 演出にかかる時間（0.3秒）
+        float time = 0f;
+        Vector3 targetScale = Vector3.one; // 最終的な大きさ（1倍）
+
+        while (time < duration)
+        {
+            if (markerObj == null) yield break;
+
+            time += Time.deltaTime;
+            float t = time / duration;
+
+            // 計算式：sin(t * π / 2) を使って，最初が速く後からゆっくりになる動きを作る
+            float ease = Mathf.Sin(t * Mathf.PI * 0.5f);
+
+            // 大きさを3倍から1倍へ滑らかに縮小
+            markerObj.localScale = Vector3.Lerp(Vector3.one * 3f, targetScale, ease);
+            // 角度を180度から0度へクルッと回転
+            markerObj.localRotation = Quaternion.Euler(0, 0, Mathf.Lerp(180f, 0f, ease));
+
+            yield return null;
+        }
+
+        // 最後にズレがないようにピッタリ1倍・無回転に戻す
+        if (markerObj != null)
+        {
+            markerObj.localScale = targetScale;
+            markerObj.localRotation = Quaternion.identity;
+        }
     }
 
     // ★軽量化：名簿(Enemy.activeEnemies)を使って最速で検索

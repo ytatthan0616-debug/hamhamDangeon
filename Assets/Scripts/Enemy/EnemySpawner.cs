@@ -30,6 +30,7 @@ public class EnemySpawner : MonoBehaviour
         public int bossWaveInterval = 10;
         public int bossCountBase = 1;
         public int bossCountIncrease = 1;
+        public int maxSpawnCountPerWave = 50;
     }
 
     [Header("難易度の自動計算設定")]
@@ -138,6 +139,11 @@ public class EnemySpawner : MonoBehaviour
                 spawnCount = difficulty.bossCountBase + (bossTimes - 1) * difficulty.bossCountIncrease;
                 spawnInterval = difficulty.baseSpawnInterval;
                 location = SpawnLocationType.ScreenTopOutside;
+
+                if (TickerMessageUI.instance != null)
+                {
+                    TickerMessageUI.instance.ShowPowerfulEnemyMessage();
+                }
             }
             else
             {
@@ -145,6 +151,8 @@ public class EnemySpawner : MonoBehaviour
                 spawnInterval = Mathf.Max(difficulty.minSpawnInterval, difficulty.baseSpawnInterval - (wave * difficulty.intervalDecrease));
             }
         }
+
+        spawnCount = Mathf.Min(spawnCount, difficulty.maxSpawnCountPerWave);
 
         List<GameObject> availableNormals = new List<GameObject>();
         foreach (var e in normalEnemies)

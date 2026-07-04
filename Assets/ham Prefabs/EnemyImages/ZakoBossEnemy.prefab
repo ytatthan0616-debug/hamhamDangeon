@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4929715234598123827}
   - component: {fileID: 569222450480282504}
   - component: {fileID: -3778574756955323923}
+  - component: {fileID: -4864157379721712515}
   m_Layer: 3
   m_Name: ZakoBossEnemy
   m_TagString: Enemy
@@ -218,6 +219,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4ae8e9107a88c4497122e23b811a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossSkill
-  skillInterval: 5
+  skillInterval: 10
   cloneCount: 10
   spawnRadius: 2
+--- !u!114 &-4864157379721712515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a9630f85b92e4c963e515a1974c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossDescending
+  targetPosition: {x: 0, y: 2.5}
+  gravity: 25

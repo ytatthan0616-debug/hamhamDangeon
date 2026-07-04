@@ -4762,7 +4762,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -6531,8 +6531,8 @@ MonoBehaviour:
     unlockWave: 101
     maxWave: 999
   difficulty:
-    baseSpawnCount: 10
-    extraEnemyPerWave: 1.1
+    baseSpawnCount: 3
+    extraEnemyPerWave: 1.2
     baseSpawnInterval: 0.8
     intervalDecrease: 0.02
     minSpawnInterval: 0.1
@@ -6540,6 +6540,7 @@ MonoBehaviour:
     bossWaveInterval: 10
     bossCountBase: 1
     bossCountIncrease: 0
+    maxSpawnCountPerWave: 50
   bossScaleMultiplier: 0.6
   customWaves:
   - waveNumber: 15
@@ -6699,7 +6700,7 @@ RectTransform:
   m_GameObject: {fileID: 2027279425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1608508801}
@@ -6722,7 +6723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

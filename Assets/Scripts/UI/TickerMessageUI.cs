@@ -74,6 +74,18 @@ public class TickerMessageUI : MonoBehaviour
         }
     }
 
+    // ★追加：強敵出現用（英語化）
+    public void ShowPowerfulEnemyMessage()
+    {
+        string[] msgs = {
+            "WARNING! A powerful enemy has appeared!!",
+            "DANGER! Massive energy detected!!",
+            "CAUTION! A formidable foe approaches!!"
+        };
+        // 赤色で目立つように表示
+        ShowMessage("<color=#ff0000>" + msgs[Random.Range(0, msgs.Length)] + "</color>");
+    }
+
     IEnumerator PlayTickerRoutine()
     {
         isPlaying = true;

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4829651216286612689}
   - component: {fileID: 3268624498561635742}
   - component: {fileID: 4224945936657336566}
+  - component: {fileID: -4084012070378748979}
   m_Layer: 3
   m_Name: ZakoEnemy 3
   m_TagString: Enemy
@@ -178,7 +179,7 @@ MonoBehaviour:
   hpGrowthPerWave: 0.1
   damageGrowthPerWave: 0.05
   isBoss: 0
-  isRangedBoss: 0
+  isRangedBoss: 1
   hasBarrier: 0
   keepDistance: 6
   enableBounce: 1
@@ -205,3 +206,22 @@ MonoBehaviour:
   shadowAlpha: 0.4
   shadowSortingOrder: -20
   isEnemyShadow: 1
+--- !u!114 &-4084012070378748979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3514017458852822920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bbef4afb3f8a24da8212c618d798da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyLaserAttack
+  laserVisualPrefab: {fileID: 4850061389831270320, guid: 769bc554ea3f0de4b82edbde68e7f1b1, type: 3}
+  attackCooldown: 4
+  chargeTime: 1
+  laserDuration: 0.3
+  laserWidth: 0.03
+  laserDamage: 15
+  maxDistance: 20

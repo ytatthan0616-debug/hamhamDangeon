@@ -59,9 +59,17 @@ public class BossSkill : MonoBehaviour
             Enemy cloneEnemy = clone.GetComponent<Enemy>();
             if (cloneEnemy != null)
             {
-                cloneEnemy.maxHP = bossEnemyScript.maxHP * 0.1f;
+                // ★修正：HPを元の10%から2%へ大幅ダウン
+                // 計算式： ボスの最大HP × 0.02
+                cloneEnemy.maxHP = bossEnemyScript.maxHP * 0.02f;
                 cloneEnemy.currentHP = cloneEnemy.maxHP;
-                cloneEnemy.touchDamage = bossEnemyScript.touchDamage * 0.5f;
+
+                // ★修正：触れた時のダメージを元の50%から10%へ大幅ダウン
+                // 計算式： ボスの接触ダメージ × 0.1
+                cloneEnemy.touchDamage = bossEnemyScript.touchDamage * 0.1f;
+
+                // ★追加：移動速度もボスの半分に落とし、逃げやすくする
+                cloneEnemy.moveSpeed = bossEnemyScript.moveSpeed * 0.5f;
 
                 // 広がっている最中はボスやプレイヤーを追いかけないようにする
                 cloneEnemy.enabled = false;

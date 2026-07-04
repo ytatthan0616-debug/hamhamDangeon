@@ -18,13 +18,19 @@ public class BackgroundScroller : MonoBehaviour
 
     // ★修正1：publicのままだとUnityが過去の設定（全部白）を優先してしまうため、
     // privateにしてプログラム内の色を強制適用します！
+    // ★修正1：0〜100WAVEまでの色を登録
     private Color[] stageColors = new Color[] {
         Color.white,                     // 0-9WAVE: 通常
-        new Color(1f, 0.75f, 0.75f),     // 10-19WAVE: 赤（わかりやすく少し濃くしました）
-        new Color(0.75f, 1f, 0.75f),     // 20-29WAVE: 緑
+        new Color(0.75f, 1f, 0.75f),     // 10-19WAVE: 緑
+        new Color(0.75f, 1f, 1f),        // 20-29WAVE: 水色
         new Color(0.75f, 0.75f, 1f),     // 30-39WAVE: 青
-        new Color(0.6f, 0.6f, 0.6f),     // 40-49WAVE: 暗め
-        new Color(0.9f, 0.7f, 1f)        // 50-59WAVE: 紫
+        new Color(0.85f, 0.6f, 1f),      // 40-49WAVE: 紫
+        new Color(1f, 0.75f, 0.9f),      // 50-59WAVE: ピンク
+        new Color(1f, 0.75f, 0.75f),     // 60-69WAVE: 赤
+        new Color(1f, 0.8f, 0.7f),       // 70-79WAVE: 朱色
+        new Color(1f, 0.85f, 0.6f),      // 80-89WAVE: オレンジ
+        new Color(1f, 0.95f, 0.6f),      // 90-99WAVE: ゴールド
+        Color.white                      // 100-109WAVE: 最終決戦（白）
     };
 
     private SpriteRenderer sr1;
@@ -85,10 +91,19 @@ public class BackgroundScroller : MonoBehaviour
 
     void UpdateTargetColor(int currentWave)
     {
-        // ★修正3：「10WAVE」になった瞬間にピッタリ色が変わるように計算式を修正
+        // 進行度合いを計算：現在のWAVE ÷ 10
         int stageIndex = currentWave / wavesPerStage;
 
-        int colorIndex = stageIndex % stageColors.Length;
-        targetColor = stageColors[colorIndex];
+        if (stageIndex <= 10)
+        {
+            targetColor = stageColors[stageIndex];
+        }
+        else
+        {
+            // 110WAVE以降はランダム（StageManagerと同じ色になるようにシードを同期）
+            Random.InitState(stageIndex);
+            targetColor = new Color(Random.Range(0.6f, 1f), Random.Range(0.6f, 1f), Random.Range(0.6f, 1f));
+            Random.InitState(System.Environment.TickCount);
+        }
     }
 }

@@ -116,14 +116,25 @@ public class HamsterController : MonoBehaviour
 
             bool isEating = (currentState == State.Eating);
 
+            // ★追加：現在向かっているエサ（すでにUntaggedになっている）を移動中にもう一度タップした場合は、そのまま移動を続けさせる
+            if (hit.collider != null && targetFood != null && hit.collider.transform == targetFood)
+            {
+                return;
+            }
+
             if (hit.collider != null && hit.collider.CompareTag("Food"))
             {
                 FoodBehavior food = hit.collider.GetComponent<FoodBehavior>();
-                if (food != null && food.transform == targetFood) return;
 
                 if (food != null)
                 {
                     if (isEating) FinishEating();
+
+                    // ★追加：別のエサに向かっている途中で新しいエサをタップしたなら、前のエサ（経験値取得済み）は画面から消す
+                    else if (currentState == State.MovingToFood && targetFood != null)
+                    {
+                        Destroy(targetFood.gameObject);
+                    }
 
                     // ==========================================
                     // ★修正：タップした瞬間に即座に経験値を獲得する！
@@ -150,6 +161,12 @@ public class HamsterController : MonoBehaviour
             else
             {
                 if (isEating) FinishEating();
+
+                // ★追加：エサに向かっている途中で地面をタップして移動キャンセルした場合も、前のエサ（経験値取得済み）は画面から消す
+                else if (currentState == State.MovingToFood && targetFood != null)
+                {
+                    Destroy(targetFood.gameObject);
+                }
 
                 targetPosition = mousePos;
                 float distance = Vector2.Distance(logicalPosition, targetPosition);

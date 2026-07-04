@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 8510732938239034082}
   - component: {fileID: 8795499894873840752}
   - component: {fileID: 4389595595611381867}
+  - component: {fileID: 7534672517329904184}
   m_Layer: 3
   m_Name: LastZako
   m_TagString: Enemy
@@ -304,6 +305,20 @@ MonoBehaviour:
   shockwaveEffectPrefab: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
   effectScale: 2
 --- !u!114 &4389595595611381867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3224751587353295310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617a9630f85b92e4c963e515a1974c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossDescending
+  targetPosition: {x: 0, y: 2.5}
+  gravity: 25
+--- !u!114 &7534672517329904184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
